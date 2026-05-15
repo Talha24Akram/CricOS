@@ -8,7 +8,8 @@ export function Nav() {
       <Link href="/scorecard">Scorecard</Link>
       <Link href="/tournament">Tournament</Link>
       <Link href="/prediction">Prediction</Link>
-      <Link href="/player/1">Player Profile</Link>
+      <Link href="/stats">Stats</Link>
+      <Link href="/player/1">Players</Link>
     </nav>
   );
 }

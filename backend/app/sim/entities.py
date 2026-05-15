@@ -1,11 +1,12 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import Dict, List, Literal
+from typing import Dict, List, Literal, Optional
 
 Phase = Literal["powerplay", "middle", "death"]
 BowlingStyle = Literal["pace", "spin"]
 Arm = Literal["left", "right"]
+BattingMindset = Literal["ultra_defensive", "defensive", "balanced", "aggressive", "ultra_aggressive"]
 
 
 @dataclass(frozen=True)
@@ -35,14 +36,41 @@ class BowlerRatings:
 
 
 @dataclass(frozen=True)
+class FieldingRatings:
+    catching: int = 50
+    ground_fielding: int = 50
+    throwing: int = 50
+    fielding_range: int = 50
+
+
+@dataclass(frozen=True)
+class WKRatings:
+    glove_work: int = 50
+    stumping: int = 50
+    diving_reflexes: int = 50
+    wk_footwork: int = 50
+
+
+@dataclass(frozen=True)
+class LeadershipRatings:
+    captaincy: int = 50
+    match_reading: int = 50
+    man_management: int = 50
+
+
+@dataclass(frozen=True)
 class Player:
     id: str
     name: str
-    role: Literal["batter", "bowler", "all_rounder", "wk"]
+    role: Literal["batter", "bowler", "all_rounder", "wicket_keeper"]
     batting: BatterRatings
     bowling: BowlerRatings
     bowling_style: BowlingStyle
     arm: Arm
+    fielding: FieldingRatings = field(default_factory=FieldingRatings)
+    wk: WKRatings = field(default_factory=WKRatings)
+    leadership: LeadershipRatings = field(default_factory=LeadershipRatings)
+    overall: int = 60
 
 
 @dataclass(frozen=True)
@@ -84,6 +112,11 @@ class BallEvent:
     wicket: bool
     score_after: int
     wickets_after: int
+    shot_zone: str = ""
+    delivery_type: str = "hard_length"
+    mindset: str = "balanced"
+    striker_id: str = ""
+    bowler_id: str = ""
 
 
 @dataclass

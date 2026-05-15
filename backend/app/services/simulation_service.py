@@ -8,7 +8,10 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.models.tables import Player, PlayerRating, Team, TeamPlayer, Venue
-from app.sim.entities import BatterRatings, BowlerRatings, Player as SimPlayer, Team as SimTeam
+from app.sim.entities import (
+    BatterRatings, BowlerRatings, FieldingRatings, LeadershipRatings,
+    Player as SimPlayer, Team as SimTeam, WKRatings,
+)
 from app.sim.engine import SimulationConfig, top_performers
 from app.sim.monte_carlo import run_monte_carlo, summary_to_dict
 from app.sim.tactical import MatchConditions, simulate_match_with_tactics
@@ -44,14 +47,36 @@ def _sim_player_from_db(player: Player, rating: PlayerRating | None) -> SimPlaye
     bowling_style = "spin" if (player.bowling_style or "").lower().find("spin") >= 0 else "pace"
     arm = "left" if (player.arm or "").lower().startswith("left") else "right"
 
+    fielding = FieldingRatings(
+        catching=get("catching"),
+        ground_fielding=get("ground_fielding"),
+        throwing=get("throwing"),
+        fielding_range=get("fielding_range"),
+    )
+    wk = WKRatings(
+        glove_work=get("glove_work"),
+        stumping=get("stumping"),
+        diving_reflexes=get("diving_reflexes"),
+        wk_footwork=get("wk_footwork"),
+    )
+    leadership = LeadershipRatings(
+        captaincy=get("captaincy"),
+        match_reading=get("match_reading"),
+        man_management=get("man_management"),
+    )
+
     return SimPlayer(
         id=str(player.id),
         name=player.name,
-        role="all_rounder",
+        role=player.role or "all_rounder",
         batting=batting,
         bowling=bowling,
         bowling_style=bowling_style,
         arm=arm,
+        fielding=fielding,
+        wk=wk,
+        leadership=leadership,
+        overall=get("overall", default=50),
     )
 
 
