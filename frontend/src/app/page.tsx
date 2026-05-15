@@ -136,7 +136,7 @@ export default function HomePage() {
           </div>
           <div className="kpi">
             <div className="small">Commentary</div>
-            <strong>Claude Sonnet</strong>
+            <strong>3 Tones</strong>
           </div>
         </div>
       </article>

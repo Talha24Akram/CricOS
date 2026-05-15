@@ -312,8 +312,10 @@ def simulate_match_with_tactics(
     config = config or SimulationConfig()
     conditions = conditions or MatchConditions()
 
+    second_seed = (config.seed + 1) if config.seed is not None else None
+    second_config = SimulationConfig(max_overs=config.max_overs, max_wickets=config.max_wickets, seed=second_seed)
     first = simulate_innings_with_tactics(team1, team2, config, conditions)
-    second = simulate_innings_with_tactics(team2, team1, config, conditions, target=first.runs)
+    second = simulate_innings_with_tactics(team2, team1, second_config, conditions, target=first.runs)
 
     if second.runs > first.runs:
         winner = team2.name

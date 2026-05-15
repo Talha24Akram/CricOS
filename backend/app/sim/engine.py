@@ -231,8 +231,10 @@ def simulate_innings(
 
 
 def simulate_match(team1: Team, team2: Team, config: SimulationConfig) -> MatchResult:
+    second_seed = (config.seed + 1) if config.seed is not None else None
+    second_config = SimulationConfig(max_overs=config.max_overs, max_wickets=config.max_wickets, seed=second_seed)
     first = simulate_innings(team1, team2, config)
-    second = simulate_innings(team2, team1, config, target=first.runs)
+    second = simulate_innings(team2, team1, second_config, target=first.runs)
 
     if second.runs > first.runs:
         wickets_left = max(0, config.max_wickets - second.wickets)
