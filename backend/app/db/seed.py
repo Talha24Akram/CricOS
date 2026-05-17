@@ -117,6 +117,35 @@ INDIA = [
           catching=78, ground_fielding=78, throwing=76, fielding_range=76)),
 ]
 
+INDIA_EXTRA = [
+    ("Tilak Varma", "batter", "left-hand bat", "right-arm medium", "left", "1175215",
+     dict(power=82, timing=80, aggression=80, death_performance=82)),
+
+    ("Sanju Samson", "wicket_keeper", "right-hand bat", "right-arm medium", "right", "390193",
+     dict(power=84, timing=80, aggression=84, death_performance=84,
+          glove_work=78, stumping=80)),
+
+    ("Shreyas Iyer", "batter", "right-hand bat", "right-arm medium", "right", "642519",
+     dict(power=80, timing=82, temperament=78, spin_handling=82)),
+
+    ("Abhishek Sharma", "all_rounder", "left-hand bat", "left-arm orthodox", "left", "1175013",
+     dict(power=80, timing=76, aggression=82,
+          spin=70, variations=66, control=68)),
+
+    ("Washington Sundar", "all_rounder", "right-hand bat", "right-arm off spin", "right", "1078418",
+     dict(power=58, timing=62,
+          spin=76, control=80, variations=72)),
+
+    ("Varun Chakravarthy", "bowler", "right-hand bat", "right-arm mystery spin", "right", "1178418",
+     dict(spin=84, variations=90, control=72, death_bowling=70)),
+
+    ("Nitish Kumar Reddy", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "1300583",
+     dict(power=74, timing=70,
+          pace=70, swing=64, seam=66)),
+]
+
+INDIA_FULL = INDIA + INDIA_EXTRA
+
 PAKISTAN = [
     ("Babar Azam", "batter", "right-hand bat", "right-arm medium", "right", "348144",
      dict(power=74, timing=92, pace_handling=88, spin_handling=90, strike_rotation=82,
@@ -203,6 +232,33 @@ PAKISTAN = [
           yorkers=35, death_bowling=68, pressure_handling=70,
           catching=70, ground_fielding=66, throwing=68, fielding_range=66)),
 ]
+
+PAKISTAN_EXTRA = [
+    ("Khushdil Shah", "all_rounder", "left-hand bat", "left-arm orthodox", "left", "880290",
+     dict(power=78, timing=70, aggression=82, death_performance=80,
+          spin=68, control=68)),
+
+    ("Mohammad Haris", "wicket_keeper", "right-hand bat", "right-arm medium", "right", "1241469",
+     dict(power=78, timing=74, aggression=78, death_performance=76,
+          glove_work=74, stumping=76)),
+
+    ("Tayyab Tahir", "batter", "right-hand bat", "right-arm medium", "right", "1390123",
+     dict(power=76, timing=74, aggression=74, temperament=72)),
+
+    ("Irfan Khan Niazi", "batter", "left-hand bat", "right-arm medium", "left", "1205622",
+     dict(power=80, timing=72, aggression=80, death_performance=78)),
+
+    ("Zaman Khan", "bowler", "right-hand bat", "left-arm fast", "left", "1349455",
+     dict(pace=82, swing=76, seam=72, yorkers=78, death_bowling=78)),
+
+    ("Sufyan Moqim", "bowler", "right-hand bat", "left-arm orthodox", "left", "1349456",
+     dict(spin=74, variations=76, control=70)),
+
+    ("Mohammad Wasim Jr", "bowler", "right-hand bat", "right-arm fast-medium", "right", "1241470",
+     dict(pace=78, swing=68, seam=70, yorkers=72, control=68, death_bowling=70)),
+]
+
+PAKISTAN_FULL = PAKISTAN + PAKISTAN_EXTRA
 
 AUSTRALIA = [
     ("David Warner", "batter", "left-hand bat", "right-arm medium", "left", "219889",
@@ -292,6 +348,33 @@ AUSTRALIA = [
           pressure_handling=70, variations=68, spin=14,
           catching=68, ground_fielding=66, throwing=68, fielding_range=66)),
 ]
+
+AUSTRALIA_EXTRA = [
+    ("Jake Fraser-McGurk", "batter", "right-hand bat", "right-arm medium", "right", "1343603",
+     dict(power=86, timing=80, aggression=88, death_performance=86)),
+
+    ("Ben McDermott", "batter", "right-hand bat", "right-arm medium", "right", "615613",
+     dict(power=76, timing=76, aggression=76, death_performance=72)),
+
+    ("Spencer Johnson", "bowler", "right-hand bat", "left-arm fast", "left", "1312003",
+     dict(pace=82, swing=80, seam=72, yorkers=76, death_bowling=78)),
+
+    ("Xavier Bartlett", "bowler", "right-hand bat", "right-arm fast-medium", "right", "1312004",
+     dict(pace=80, swing=72, seam=74, yorkers=72, death_bowling=74)),
+
+    ("Josh Philippe", "wicket_keeper", "right-hand bat", "right-arm medium", "right", "1078460",
+     dict(power=74, timing=76, aggression=76, death_performance=72,
+          glove_work=74, stumping=72)),
+
+    ("Tanveer Sangha", "bowler", "right-hand bat", "right-arm leg spin", "right", "1343604",
+     dict(spin=76, variations=78, control=70)),
+
+    ("Cooper Connolly", "all_rounder", "left-hand bat", "right-arm off spin", "left", "1369012",
+     dict(power=66, timing=68,
+          spin=68, control=66, variations=64)),
+]
+
+AUSTRALIA_FULL = AUSTRALIA + AUSTRALIA_EXTRA
 
 ENGLAND = [
     ("Jos Buttler", "wicket_keeper", "right-hand bat", "right-arm medium", "right", "308967",
@@ -385,6 +468,34 @@ ENGLAND = [
           catching=68, ground_fielding=66, throwing=68, fielding_range=66)),
 ]
 
+ENGLAND_EXTRA = [
+    ("Jason Roy", "batter", "right-hand bat", "right-arm medium", "right", "371556",
+     dict(power=84, timing=80, aggression=86, death_performance=82)),
+
+    ("Dawid Malan", "batter", "left-hand bat", "right-arm medium", "left", "419938",
+     dict(power=72, timing=84, temperament=82, pace_handling=80)),
+
+    ("Jordan Cox", "wicket_keeper", "right-hand bat", "right-arm medium", "right", "1253994",
+     dict(power=72, timing=72, aggression=72,
+          glove_work=76, stumping=74)),
+
+    ("Brydon Carse", "all_rounder", "right-hand bat", "right-arm fast", "right", "1136630",
+     dict(power=68, timing=66,
+          pace=80, swing=72, seam=74, yorkers=70, death_bowling=72)),
+
+    ("Saqib Mahmood", "bowler", "right-hand bat", "right-arm fast", "right", "1078836",
+     dict(pace=82, swing=76, seam=74, yorkers=70, death_bowling=72)),
+
+    ("Tom Curran", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "755259",
+     dict(power=66, timing=66,
+          pace=72, swing=74, seam=70, yorkers=72, death_bowling=72)),
+
+    ("Luke Wood", "bowler", "left-hand bat", "left-arm fast", "left", "1078837",
+     dict(pace=80, swing=74, seam=70, yorkers=70, death_bowling=70)),
+]
+
+ENGLAND_FULL = ENGLAND + ENGLAND_EXTRA
+
 NEW_ZEALAND = [
     ("Kane Williamson", "batter", "right-hand bat", "right-arm off spin", "right", "277906",
      dict(power=74, timing=92, pace_handling=88, spin_handling=90, strike_rotation=82,
@@ -473,6 +584,34 @@ NEW_ZEALAND = [
           catching=68, ground_fielding=64, throwing=66, fielding_range=64)),
 ]
 
+NEW_ZEALAND_EXTRA = [
+    ("Tom Latham", "wicket_keeper", "left-hand bat", "right-arm medium", "left", "373117",
+     dict(power=72, timing=80, temperament=80,
+          glove_work=80, stumping=78)),
+
+    ("Will Young", "batter", "right-hand bat", "right-arm medium", "right", "614111",
+     dict(power=68, timing=76, temperament=76, pace_handling=72)),
+
+    ("Adam Milne", "bowler", "right-hand bat", "right-arm fast", "right", "554957",
+     dict(pace=88, swing=66, seam=68, yorkers=72, control=68, death_bowling=74)),
+
+    ("Kyle Jamieson", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "1136956",
+     dict(power=72, timing=66,
+          pace=78, swing=72, seam=76, yorkers=64, control=72, death_bowling=66)),
+
+    ("Ben Sears", "bowler", "right-hand bat", "right-arm fast", "right", "1312890",
+     dict(pace=82, swing=68, seam=70, yorkers=68, death_bowling=70)),
+
+    ("Cole McConchie", "all_rounder", "right-hand bat", "right-arm off spin", "right", "789428",
+     dict(power=64, timing=66,
+          spin=68, control=66)),
+
+    ("Blair Tickner", "bowler", "right-hand bat", "right-arm fast-medium", "right", "555007",
+     dict(pace=76, swing=68, seam=70, yorkers=64, control=68, death_bowling=66)),
+]
+
+NEW_ZEALAND_FULL = NEW_ZEALAND + NEW_ZEALAND_EXTRA
+
 SOUTH_AFRICA = [
     ("Aiden Markram", "batter", "right-hand bat", "right-arm off spin", "right", "536083",
      dict(power=76, timing=86, pace_handling=82, spin_handling=84, strike_rotation=80,
@@ -558,6 +697,34 @@ SOUTH_AFRICA = [
           yorkers=38, death_bowling=66, pressure_handling=72,
           catching=70, ground_fielding=66, throwing=68, fielding_range=66)),
 ]
+
+SOUTH_AFRICA_EXTRA = [
+    ("Ryan Rickelton", "wicket_keeper", "left-hand bat", "right-arm medium", "left", "1078463",
+     dict(power=78, timing=76, aggression=76,
+          glove_work=78, stumping=76)),
+
+    ("Lhuan-dre Pretorius", "batter", "right-hand bat", "right-arm medium", "right", "1259470",
+     dict(power=76, timing=74, aggression=76, death_performance=74)),
+
+    ("Gerald Coetzee", "bowler", "right-hand bat", "right-arm fast", "right", "1253990",
+     dict(pace=86, swing=70, seam=76, yorkers=72, death_bowling=74)),
+
+    ("Nandre Burger", "bowler", "left-hand bat", "left-arm fast", "left", "1178480",
+     dict(pace=82, swing=76, seam=72, yorkers=68, death_bowling=70)),
+
+    ("Wiaan Mulder", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "880287",
+     dict(power=68, timing=68,
+          pace=72, swing=68, seam=70, yorkers=64, control=70)),
+
+    ("Patrick Kruger", "all_rounder", "right-hand bat", "right-arm medium", "right", "1312891",
+     dict(power=64, timing=64,
+          pace=66, swing=62, seam=64, control=64)),
+
+    ("Bjorn Fortuin", "bowler", "left-hand bat", "left-arm orthodox", "left", "1025503",
+     dict(spin=76, variations=72, control=76)),
+]
+
+SOUTH_AFRICA_FULL = SOUTH_AFRICA + SOUTH_AFRICA_EXTRA
 
 WEST_INDIES = [
     ("Rovman Powell", "batter", "right-hand bat", "right-arm medium", "right", "606006",
@@ -649,6 +816,33 @@ WEST_INDIES = [
           catching=70, ground_fielding=68, throwing=68, fielding_range=68)),
 ]
 
+WEST_INDIES_EXTRA = [
+    ("Evin Lewis", "batter", "left-hand bat", "right-arm medium", "left", "651376",
+     dict(power=90, timing=76, aggression=92, death_performance=86)),
+
+    ("Shamarh Brooks", "batter", "right-hand bat", "right-arm medium", "right", "652440",
+     dict(power=70, timing=78, temperament=74, clutch=72)),
+
+    ("Sherfane Rutherford", "all_rounder", "left-hand bat", "right-arm medium", "left", "1049930",
+     dict(power=82, timing=72, aggression=84, death_performance=82,
+          pace=62, swing=56, seam=58)),
+
+    ("Keemo Paul", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "1064433",
+     dict(power=68, timing=66,
+          pace=72, swing=64, seam=66, yorkers=64, death_bowling=64)),
+
+    ("Hayden Walsh Jr", "bowler", "right-hand bat", "right-arm leg spin", "right", "1049940",
+     dict(spin=76, variations=78, control=70)),
+
+    ("Oshane Thomas", "bowler", "right-hand bat", "right-arm fast", "right", "1064435",
+     dict(pace=86, swing=64, seam=68, yorkers=68, death_bowling=70)),
+
+    ("Yannic Cariah", "bowler", "right-hand bat", "right-arm leg spin", "right", "1269213",
+     dict(spin=72, variations=74, control=68)),
+]
+
+WEST_INDIES_FULL = WEST_INDIES + WEST_INDIES_EXTRA
+
 SRI_LANKA = [
     ("Kusal Mendis", "wicket_keeper", "right-hand bat", "right-arm medium", "right", "515548",
      dict(power=78, timing=80, pace_handling=76, spin_handling=78, strike_rotation=78,
@@ -739,15 +933,364 @@ SRI_LANKA = [
           catching=66, ground_fielding=62, throwing=64, fielding_range=62)),
 ]
 
+SRI_LANKA_EXTRA = [
+    ("Avishka Fernando", "batter", "right-hand bat", "right-arm medium", "right", "1078627",
+     dict(power=74, timing=76, aggression=74, death_performance=72)),
+
+    ("Janith Liyanage", "batter", "right-hand bat", "right-arm medium", "right", "1259471",
+     dict(power=72, timing=74, aggression=72, death_performance=70)),
+
+    ("Chamika Karunaratne", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "1175209",
+     dict(power=68, timing=64,
+          pace=72, swing=68, seam=68, yorkers=66, death_bowling=66)),
+
+    ("Jeffrey Vandersay", "bowler", "right-hand bat", "right-arm leg spin", "right", "554946",
+     dict(spin=76, variations=78, control=70)),
+
+    ("Lahiru Kumara", "bowler", "right-hand bat", "right-arm fast", "right", "1078621",
+     dict(pace=82, swing=68, seam=68, yorkers=66, death_bowling=66)),
+
+    ("Binura Fernando", "bowler", "left-hand bat", "left-arm fast-medium", "left", "1259472",
+     dict(pace=76, swing=72, seam=68, yorkers=64, death_bowling=64)),
+
+    ("Pramod Madushan", "bowler", "right-hand bat", "right-arm fast", "right", "1259473",
+     dict(pace=80, swing=66, seam=68, yorkers=68, death_bowling=68)),
+]
+
+SRI_LANKA_FULL = SRI_LANKA + SRI_LANKA_EXTRA
+
+# ─── New Teams ────────────────────────────────────────────────────────────────
+
+BANGLADESH = [
+    ("Najmul Hossain Shanto", "batter", "left-hand bat", "right-arm medium", "left", "1078430",
+     dict(power=72, timing=80, temperament=82, clutch=76,
+          captaincy=78, match_reading=74)),
+
+    ("Litton Das", "wicket_keeper", "right-hand bat", "right-arm medium", "right", "658192",
+     dict(power=76, timing=78, aggression=76, death_performance=72,
+          glove_work=80, stumping=82)),
+
+    ("Shakib Al Hasan", "all_rounder", "left-hand bat", "left-arm orthodox", "left", "56143",
+     dict(power=72, timing=76, aggression=72, temperament=82, clutch=80,
+          spin=84, control=82, variations=78, death_bowling=72, pressure_handling=80)),
+
+    ("Mehidy Hasan Miraz", "all_rounder", "right-hand bat", "right-arm off spin", "right", "1078431",
+     dict(power=60, timing=62,
+          spin=78, control=80, variations=72, death_bowling=62)),
+
+    ("Mustafizur Rahman", "bowler", "right-hand bat", "left-arm fast-medium", "left", "740979",
+     dict(pace=78, swing=82, seam=76, yorkers=76, control=76, death_bowling=76,
+          variations=80, pressure_handling=74)),
+
+    ("Taskin Ahmed", "bowler", "right-hand bat", "right-arm fast", "right", "740980",
+     dict(pace=82, swing=70, seam=72, yorkers=68, control=70, death_bowling=68)),
+
+    ("Shoriful Islam", "bowler", "right-hand bat", "left-arm fast-medium", "left", "1253997",
+     dict(pace=78, swing=76, seam=70, yorkers=66, control=66, death_bowling=66)),
+
+    ("Soumya Sarkar", "batter", "left-hand bat", "right-arm medium", "left", "791551",
+     dict(power=76, timing=74, aggression=78, death_performance=74)),
+
+    ("Towhid Hridoy", "batter", "right-hand bat", "right-arm medium", "right", "1312900",
+     dict(power=72, timing=74, temperament=72, clutch=70, death_performance=70)),
+
+    ("Afif Hossain", "all_rounder", "left-hand bat", "right-arm off spin", "left", "1138476",
+     dict(power=70, timing=72, aggression=74, death_performance=72,
+          spin=66, control=66)),
+
+    ("Tanzid Hasan Tamim", "batter", "left-hand bat", "right-arm medium", "left", "1259474",
+     dict(power=78, timing=72, aggression=80, death_performance=74)),
+
+    ("Jaker Ali", "wicket_keeper", "right-hand bat", "right-arm medium", "right", "1259475",
+     dict(power=68, timing=66, aggression=66,
+          glove_work=72, stumping=74)),
+
+    ("Mahmudullah Riyad", "all_rounder", "right-hand bat", "right-arm off spin", "right", "352877",
+     dict(power=68, timing=70, temperament=76, clutch=74, death_performance=70,
+          spin=68, control=70, death_bowling=66)),
+
+    ("Rishad Hossain", "bowler", "right-hand bat", "right-arm leg spin", "right", "1312901",
+     dict(spin=76, variations=80, control=68, death_bowling=64)),
+
+    ("Tanzim Hasan Sakib", "bowler", "right-hand bat", "right-arm fast", "right", "1312902",
+     dict(pace=78, swing=66, seam=68, yorkers=64, death_bowling=62)),
+
+    ("Hasan Mahmud", "bowler", "right-hand bat", "right-arm fast-medium", "right", "1253998",
+     dict(pace=76, swing=68, seam=70, yorkers=62, control=66, death_bowling=62)),
+
+    ("Nasum Ahmed", "bowler", "left-hand bat", "left-arm orthodox", "left", "1175212",
+     dict(spin=76, variations=70, control=74, death_bowling=60)),
+
+    ("Shamim Hossain", "all_rounder", "left-hand bat", "right-arm medium", "left", "1253999",
+     dict(power=68, timing=66, aggression=70, death_performance=68,
+          pace=58, swing=54, seam=56)),
+
+    ("Parvez Hossain Emon", "batter", "right-hand bat", "right-arm medium", "right", "1259476",
+     dict(power=70, timing=70, aggression=70, death_performance=68)),
+
+    ("Mohammad Saifuddin", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "793464",
+     dict(power=66, timing=64,
+          pace=70, swing=66, seam=66, yorkers=66, death_bowling=64)),
+
+    ("Nurul Hasan Sohan", "wicket_keeper", "right-hand bat", "right-arm medium", "right", "604602",
+     dict(power=66, timing=66, aggression=68,
+          glove_work=72, stumping=70)),
+
+    ("Ripon Mondol", "batter", "left-hand bat", "right-arm medium", "left", "1390124",
+     dict(power=66, timing=66, aggression=66, death_performance=64)),
+]
+
+AFGHANISTAN = [
+    ("Rashid Khan", "all_rounder", "right-hand bat", "right-arm leg spin", "right", "875948",
+     dict(power=70, timing=72, aggression=74, clutch=86,
+          spin=92, variations=94, control=84, death_bowling=82, pressure_handling=86,
+          captaincy=82, match_reading=82)),
+
+    ("Mohammad Nabi", "all_rounder", "right-hand bat", "right-arm off spin", "right", "269753",
+     dict(power=70, timing=70, temperament=76, clutch=72,
+          spin=78, control=80, variations=72, death_bowling=66, pressure_handling=74)),
+
+    ("Rahmanullah Gurbaz", "wicket_keeper", "right-hand bat", "right-arm medium", "right", "1257659",
+     dict(power=82, timing=78, aggression=84, death_performance=82,
+          glove_work=76, stumping=78)),
+
+    ("Ibrahim Zadran", "batter", "right-hand bat", "right-arm medium", "right", "1257660",
+     dict(power=72, timing=78, temperament=74, pace_handling=72, spin_handling=76)),
+
+    ("Hazratullah Zazai", "batter", "left-hand bat", "right-arm medium", "left", "1241474",
+     dict(power=84, timing=72, aggression=86, death_performance=80)),
+
+    ("Najibullah Zadran", "batter", "left-hand bat", "right-arm medium", "left", "493817",
+     dict(power=86, timing=72, aggression=88, death_performance=86, clutch=78)),
+
+    ("Azmatullah Omarzai", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "1253988",
+     dict(power=72, timing=68, aggression=72, death_performance=70,
+          pace=74, swing=64, seam=66, yorkers=64, death_bowling=66)),
+
+    ("Gulbadin Naib", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "468079",
+     dict(power=68, timing=66,
+          pace=70, swing=62, seam=64, yorkers=62, death_bowling=62,
+          captaincy=72)),
+
+    ("Mujeeb Ur Rahman", "bowler", "right-hand bat", "right-arm off spin", "right", "1153647",
+     dict(spin=84, variations=88, control=74,
+          pace=28, swing=14, seam=14, yorkers=32, death_bowling=68, pressure_handling=70)),
+
+    ("Fazalhaq Farooqi", "bowler", "right-hand bat", "left-arm fast", "left", "1253987",
+     dict(pace=84, swing=78, seam=72, yorkers=72, control=72, death_bowling=72, pressure_handling=70)),
+
+    ("Naveen-ul-Haq", "bowler", "right-hand bat", "right-arm fast-medium", "right", "1154093",
+     dict(pace=80, swing=70, seam=70, yorkers=68, control=68, death_bowling=66)),
+
+    ("Nangeyalia Kharote", "bowler", "right-hand bat", "right-arm fast-medium", "right", "1259477",
+     dict(pace=76, swing=64, seam=66, yorkers=62, death_bowling=62)),
+
+    ("Darwish Rasooli", "batter", "left-hand bat", "right-arm medium", "left", "1259478",
+     dict(power=70, timing=72, aggression=70, death_performance=68)),
+
+    ("Usman Ghani", "batter", "left-hand bat", "right-arm medium", "left", "875945",
+     dict(power=66, timing=70, temperament=68, pace_handling=66)),
+
+    ("Karim Janat", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "875946",
+     dict(power=64, timing=62,
+          pace=64, swing=58, seam=60, yorkers=58, death_bowling=58)),
+
+    ("Sharafuddin Ashraf", "all_rounder", "left-hand bat", "left-arm fast-medium", "left", "875947",
+     dict(power=60, timing=60,
+          pace=66, swing=64, seam=62, yorkers=60, death_bowling=60)),
+
+    ("Qais Ahmad", "bowler", "right-hand bat", "right-arm leg spin", "right", "1154094",
+     dict(spin=80, variations=82, control=70, death_bowling=64)),
+
+    ("Sediqullah Atal", "batter", "right-hand bat", "right-arm medium", "right", "1390125",
+     dict(power=68, timing=68, aggression=68, death_performance=66)),
+
+    ("Farid Ahmad Malik", "bowler", "right-hand bat", "right-arm fast", "right", "1390126",
+     dict(pace=76, swing=62, seam=64, yorkers=60, death_bowling=60)),
+
+    ("Mohammad Ishaq", "bowler", "left-hand bat", "left-arm fast", "left", "1259479",
+     dict(pace=78, swing=72, seam=66, yorkers=64, death_bowling=64)),
+
+    ("Rahmat Shah", "batter", "right-hand bat", "right-arm medium", "right", "875944",
+     dict(power=64, timing=70, temperament=70, spin_handling=68)),
+
+    ("Ikram Alikhil", "wicket_keeper", "left-hand bat", "right-arm medium", "left", "1154092",
+     dict(power=68, timing=66, aggression=68,
+          glove_work=72, stumping=72)),
+]
+
+ZIMBABWE = [
+    ("Sikandar Raza", "all_rounder", "right-hand bat", "right-arm off spin", "right", "176434",
+     dict(power=74, timing=76, temperament=80, clutch=76, death_performance=74,
+          spin=80, control=78, variations=74, death_bowling=68, pressure_handling=74,
+          captaincy=76, match_reading=74)),
+
+    ("Craig Ervine", "batter", "left-hand bat", "right-arm medium", "left", "248069",
+     dict(power=70, timing=76, temperament=78, pace_handling=72, spin_handling=74,
+          captaincy=72)),
+
+    ("Regis Chakabva", "wicket_keeper", "right-hand bat", "right-arm medium", "right", "459422",
+     dict(power=68, timing=70, temperament=72,
+          glove_work=76, stumping=76, diving_reflexes=74)),
+
+    ("Sean Williams", "all_rounder", "left-hand bat", "right-arm off spin", "left", "225677",
+     dict(power=66, timing=70, temperament=74,
+          spin=72, control=72, variations=68, death_bowling=60)),
+
+    ("Wesley Madhevere", "all_rounder", "right-hand bat", "right-arm off spin", "right", "1136960",
+     dict(power=70, timing=72, aggression=72, death_performance=68,
+          spin=70, control=68, variations=66)),
+
+    ("Ryan Burl", "all_rounder", "right-hand bat", "right-arm leg spin", "right", "1064444",
+     dict(power=68, timing=68, aggression=70, death_performance=70,
+          spin=74, variations=72, control=66)),
+
+    ("Tadiwanashe Marumani", "batter", "left-hand bat", "right-arm medium", "left", "1175213",
+     dict(power=72, timing=70, aggression=72, death_performance=68)),
+
+    ("Clive Madande", "wicket_keeper", "right-hand bat", "right-arm medium", "right", "1136961",
+     dict(power=64, timing=64, aggression=64,
+          glove_work=70, stumping=70)),
+
+    ("Brian Bennett", "batter", "right-hand bat", "right-arm medium", "right", "1312903",
+     dict(power=68, timing=68, aggression=68, death_performance=66)),
+
+    ("Milton Shumba", "all_rounder", "right-hand bat", "right-arm off spin", "right", "1253992",
+     dict(power=66, timing=66, aggression=66, death_performance=64,
+          spin=64, control=64)),
+
+    ("Joylord Gumbie", "batter", "right-hand bat", "right-arm medium", "right", "1390127",
+     dict(power=64, timing=64, aggression=64, death_performance=62)),
+
+    ("Luke Jongwe", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "803987",
+     dict(power=64, timing=62,
+          pace=70, swing=64, seam=64, yorkers=60, death_bowling=60)),
+
+    ("Brad Evans", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "1175214",
+     dict(power=62, timing=62,
+          pace=68, swing=62, seam=62, yorkers=58, death_bowling=58)),
+
+    ("Blessing Muzarabani", "bowler", "right-hand bat", "right-arm fast", "right", "975788",
+     dict(pace=84, swing=68, seam=72, yorkers=68, control=66, death_bowling=66, pressure_handling=66)),
+
+    ("Tendai Chatara", "bowler", "right-hand bat", "right-arm fast", "right", "321697",
+     dict(pace=76, swing=70, seam=70, yorkers=60, control=68, death_bowling=62)),
+
+    ("Victor Nyauchi", "bowler", "right-hand bat", "right-arm fast-medium", "right", "1064445",
+     dict(pace=74, swing=64, seam=66, yorkers=58, control=64, death_bowling=58)),
+
+    ("Richard Ngarava", "bowler", "left-hand bat", "left-arm fast", "left", "1064446",
+     dict(pace=76, swing=72, seam=66, yorkers=60, control=62, death_bowling=60)),
+
+    ("Innocent Kaia", "batter", "left-hand bat", "right-arm medium", "left", "1259480",
+     dict(power=64, timing=66, aggression=64, death_performance=62)),
+
+    ("Takudzwanashe Kaitano", "batter", "right-hand bat", "right-arm medium", "right", "1390128",
+     dict(power=60, timing=62, aggression=60, death_performance=60)),
+
+    ("Dion Myers", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "1312904",
+     dict(power=62, timing=60,
+          pace=64, swing=58, seam=60, yorkers=56, death_bowling=56)),
+
+    ("Tanaka Chivanga", "bowler", "right-hand bat", "right-arm fast", "right", "1390129",
+     dict(pace=72, swing=60, seam=62, yorkers=56, death_bowling=56)),
+
+    ("Tinotenda Maposa", "wicket_keeper", "right-hand bat", "right-arm medium", "right", "1390130",
+     dict(power=60, timing=60, aggression=60,
+          glove_work=66, stumping=66)),
+]
+
+IRELAND = [
+    ("Paul Stirling", "batter", "right-hand bat", "right-arm off spin", "right", "307706",
+     dict(power=82, timing=78, aggression=84, death_performance=78,
+          captaincy=72)),
+
+    ("Andrew Balbirnie", "batter", "right-hand bat", "right-arm medium", "right", "545530",
+     dict(power=72, timing=76, temperament=78, pace_handling=72,
+          captaincy=78, match_reading=74)),
+
+    ("Lorcan Tucker", "wicket_keeper", "left-hand bat", "right-arm medium", "left", "1078440",
+     dict(power=74, timing=74, aggression=72, death_performance=70,
+          glove_work=76, stumping=76)),
+
+    ("Harry Tector", "batter", "right-hand bat", "right-arm medium", "right", "1138469",
+     dict(power=68, timing=72, temperament=72, pace_handling=68)),
+
+    ("Gareth Delany", "all_rounder", "right-hand bat", "right-arm leg spin", "right", "951837",
+     dict(power=76, timing=70, aggression=76, death_performance=74,
+          spin=70, variations=72, control=66)),
+
+    ("Curtis Campher", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "1253993",
+     dict(power=68, timing=66,
+          pace=72, swing=68, seam=68, yorkers=62, death_bowling=64)),
+
+    ("Mark Adair", "all_rounder", "right-hand bat", "right-arm fast", "right", "886462",
+     dict(power=68, timing=64,
+          pace=74, swing=68, seam=68, yorkers=64, death_bowling=64)),
+
+    ("Josh Little", "bowler", "right-hand bat", "left-arm fast", "left", "1138470",
+     dict(pace=80, swing=78, seam=70, yorkers=72, control=68, death_bowling=68)),
+
+    ("Barry McCarthy", "bowler", "right-hand bat", "right-arm fast-medium", "right", "855007",
+     dict(pace=76, swing=72, seam=70, yorkers=64, control=66, death_bowling=62)),
+
+    ("Craig Young", "bowler", "right-hand bat", "right-arm fast-medium", "right", "712953",
+     dict(pace=74, swing=70, seam=68, yorkers=60, control=64, death_bowling=60)),
+
+    ("Simi Singh", "all_rounder", "right-hand bat", "right-arm off spin", "right", "712954",
+     dict(power=62, timing=62,
+          spin=68, control=68, variations=64)),
+
+    ("George Dockrell", "all_rounder", "left-hand bat", "left-arm orthodox", "left", "532823",
+     dict(power=60, timing=62,
+          spin=72, control=72, variations=66, death_bowling=58)),
+
+    ("Fionn Hand", "bowler", "right-hand bat", "right-arm fast-medium", "right", "1259481",
+     dict(pace=72, swing=66, seam=64, yorkers=58, death_bowling=56)),
+
+    ("Stephen Doherty", "bowler", "right-hand bat", "right-arm off spin", "right", "1259482",
+     dict(spin=70, variations=66, control=70, death_bowling=54)),
+
+    ("Ross Adair", "batter", "right-hand bat", "right-arm medium", "right", "1078441",
+     dict(power=64, timing=66, aggression=64, death_performance=60)),
+
+    ("Neil Rock", "wicket_keeper", "right-hand bat", "right-arm medium", "right", "1259483",
+     dict(power=66, timing=66, aggression=64,
+          glove_work=70, stumping=68)),
+
+    ("Shane Getkate", "all_rounder", "right-hand bat", "right-arm fast-medium", "right", "884227",
+     dict(power=64, timing=62,
+          pace=66, swing=60, seam=60, yorkers=56, death_bowling=56)),
+
+    ("Tector Jordan", "batter", "left-hand bat", "right-arm medium", "left", "1390131",
+     dict(power=60, timing=62, aggression=60, death_performance=58)),
+
+    ("Matt Ford", "bowler", "right-hand bat", "right-arm fast", "right", "1312905",
+     dict(pace=70, swing=62, seam=62, yorkers=56, death_bowling=54)),
+
+    ("James McCollum", "batter", "right-hand bat", "right-arm medium", "right", "712952",
+     dict(power=60, timing=64, temperament=64, pace_handling=60)),
+
+    ("Graham Hume", "bowler", "right-hand bat", "right-arm fast-medium", "right", "1259484",
+     dict(pace=72, swing=64, seam=62, yorkers=56, death_bowling=54)),
+
+    ("Peter Chase", "bowler", "right-hand bat", "right-arm fast-medium", "right", "819441",
+     dict(pace=68, swing=64, seam=62, yorkers=54, death_bowling=54)),
+]
+
 TEAMS_DATA = {
-    "India": ("IND", "🇮🇳", INDIA),
-    "Pakistan": ("PAK", "🇵🇰", PAKISTAN),
-    "Australia": ("AUS", "🇦🇺", AUSTRALIA),
-    "England": ("ENG", "🏴󠁧󠁢󠁥󠁮󠁧󠁿", ENGLAND),
-    "New Zealand": ("NZ", "🇳🇿", NEW_ZEALAND),
-    "South Africa": ("SA", "🇿🇦", SOUTH_AFRICA),
-    "West Indies": ("WI", "🏏", WEST_INDIES),
-    "Sri Lanka": ("SL", "🇱🇰", SRI_LANKA),
+    "India": ("IND", "🇮🇳", INDIA_FULL),
+    "Pakistan": ("PAK", "🇵🇰", PAKISTAN_FULL),
+    "Australia": ("AUS", "🇦🇺", AUSTRALIA_FULL),
+    "England": ("ENG", "🏴󠁧󠁢󠁥󠁮󠁧󠁿", ENGLAND_FULL),
+    "New Zealand": ("NZ", "🇳🇿", NEW_ZEALAND_FULL),
+    "South Africa": ("SA", "🇿🇦", SOUTH_AFRICA_FULL),
+    "West Indies": ("WI", "🏏", WEST_INDIES_FULL),
+    "Sri Lanka": ("SL", "🇱🇰", SRI_LANKA_FULL),
+    "Bangladesh": ("BAN", "🇧🇩", BANGLADESH),
+    "Afghanistan": ("AFG", "🇦🇫", AFGHANISTAN),
+    "Zimbabwe": ("ZIM", "🇿🇼", ZIMBABWE),
+    "Ireland": ("IRE", "🇮🇪", IRELAND),
 }
 
 PHOTO_BASE = "https://img1.hscicdn.com/image/upload/f_auto,t_ds_sq_w_160/lsci/{cricinfo_id}.jpg"
@@ -879,7 +1422,7 @@ def seed_teams_players() -> None:
                 )
 
         session.commit()
-        print("Seed complete: 8 teams × 15 players, 8 venues, realistic ratings.")
+        print("Seed complete: 12 teams, 8 venues, realistic ratings.")
     finally:
         session.close()
 

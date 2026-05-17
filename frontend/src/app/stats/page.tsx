@@ -31,7 +31,7 @@ interface PlayerStats {
   };
 }
 
-const TEAMS = ["India", "Pakistan", "Australia", "England", "New Zealand", "South Africa", "West Indies", "Sri Lanka"];
+const TEAMS = ["India", "Pakistan", "Australia", "England", "New Zealand", "South Africa", "West Indies", "Sri Lanka", "Bangladesh", "Afghanistan", "Zimbabwe", "Ireland"];
 
 const ROLE_LABELS: Record<string, string> = {
   batter:         "BAT",
