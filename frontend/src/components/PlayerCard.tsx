@@ -15,6 +15,7 @@ interface PlayerCardProps {
   onCaptain?: () => void;
   onWK?: () => void;
   compact?: boolean;
+  disabled?: boolean;
 }
 
 const ROLE_COLORS: Record<string, string> = {
@@ -44,6 +45,7 @@ export default function PlayerCard({
   onCaptain,
   onWK,
   compact = false,
+  disabled = false,
 }: PlayerCardProps) {
   const [imgErr, setImgErr] = useState(false);
 
@@ -86,12 +88,17 @@ export default function PlayerCard({
 
   return (
     <div
-      onClick={onClick}
+      onClick={disabled && !isSelected ? undefined : onClick}
       className={`
-        flex flex-col items-center p-3 rounded-xl cursor-pointer transition-all
-        ${isSelected ? "bg-emerald-800 ring-2 ring-emerald-500" : "bg-zinc-800 hover:bg-zinc-700"}
-        relative
+        flex flex-col items-center p-3 rounded-xl transition-all relative
+        ${disabled && !isSelected ? "opacity-35 cursor-not-allowed" : "cursor-pointer"}
+        ${isSelected
+          ? "ring-2 ring-emerald-500"
+          : disabled
+          ? "bg-zinc-900"
+          : "bg-zinc-800 hover:bg-zinc-700"}
       `}
+      style={isSelected ? { background: "rgba(0,209,178,0.12)", border: "2px solid rgba(0,209,178,0.5)" } : {}}
     >
       {/* Badges */}
       <div className="absolute top-1 left-1 flex gap-1">
